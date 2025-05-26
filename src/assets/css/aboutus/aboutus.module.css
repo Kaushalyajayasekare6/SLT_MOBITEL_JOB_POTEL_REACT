@@ -1,0 +1,88 @@
+
+.aboutContainer {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.aboutHero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.aboutHero h1 {
+  color: #0056b3;
+  font-size: 48px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Content Section */
+.aboutContent {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.aboutText {
+  flex: 1;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.aboutText p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.aboutImage {
+  flex: 1;
+}
+
+.aboutImg {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Learn More Button */
+.learnMoreBtn {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.learnMoreBtn a {
+  display: inline-block;
+  background: #0056b3;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.learnMoreBtn a:hover {
+  background: #003d7a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .aboutContent {
+    flex-direction: column;
+  }
+
+  .aboutHero h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutText p {
+    font-size: 16px;
+  }
+}

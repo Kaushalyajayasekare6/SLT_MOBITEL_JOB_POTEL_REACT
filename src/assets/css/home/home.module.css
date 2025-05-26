@@ -1,0 +1,180 @@
+/* Global Reset */
+.homePage * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.homePage {
+  background-color: #0E1338;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Banner */
+.heroBanner {
+  position: relative;
+  margin-bottom: 40px;
+  background-color: #0E1338;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannerImage {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  margin: auto;
+}
+
+/* Job Categories */
+.jobCategories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0 50px 40px;
+  background-color: white;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin-top: 40px;
+}
+
+/* Job Card */
+.jobCard {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-left: 20px;
+  max-width: 100%;
+  width: 550px;
+}
+
+.jobCard:hover {
+  transform: translateY(-5px);
+}
+
+.jobCard h3 {
+  padding: 15px;
+  background: #0056b3;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jobCard p {
+  font-weight: bold;
+  font-size: 10px;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+.jobCard ul {
+  padding: 10px 10px;
+  list-style-type: none;
+  flex-grow: 1;
+}
+
+.jobCard b {
+  font-size: 10px;
+}
+
+.jobCard li {
+  margin-bottom: 8px;
+  font-size: 10px;
+  padding-left: 20px;
+  position: relative;
+  margin-top: 2px;
+}
+
+.jobCard li:before {
+  content: "•";
+  color: #0056b3;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Apply Button */
+.applyBtn {
+  display: block;
+  background: rgb(105, 185, 105);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: auto;
+  transition: background 0.3s;
+}
+
+.applyBtn:hover {
+  background: #003d7a;
+}
+
+/* Footer */
+.footer {
+  background: #d4cfcf;
+  color: black;
+  padding: 40px 50px;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footerSection {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footerSection h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.footerSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerSection ul li {
+  margin-bottom: 10px;
+}
+
+.footerSection ul li a {
+  color: #0a0202;
+  text-decoration: none;
+}
+
+.footerSection ul li a:hover {
+  text-decoration: underline;
+}
+
+.footerSection a {
+  color: #000000;
+  padding: 10px;
+}
+
+.footerBottom {
+  text-align: center;
+  margin-top: 20px;
+}
