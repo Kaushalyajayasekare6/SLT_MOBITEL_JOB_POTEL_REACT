@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/SLT_MOBITEL_JOB_POTEL_REACT/static/css/main.74e6fbe5.css",
+    "main.js": "/SLT_MOBITEL_JOB_POTEL_REACT/static/js/main.26074128.js",
+    "static/media/2.png": "/SLT_MOBITEL_JOB_POTEL_REACT/static/media/2.5a4ea50c88910c49f6f7.png",
+    "static/media/3.png": "/SLT_MOBITEL_JOB_POTEL_REACT/static/media/3.985f1ca2bb7f48a26e9a.png",
+    "static/media/1.png": "/SLT_MOBITEL_JOB_POTEL_REACT/static/media/1.ba98e76833a15fc9611e.png",
+    "index.html": "/SLT_MOBITEL_JOB_POTEL_REACT/index.html",
+    "main.74e6fbe5.css.map": "/SLT_MOBITEL_JOB_POTEL_REACT/static/css/main.74e6fbe5.css.map",
+    "main.26074128.js.map": "/SLT_MOBITEL_JOB_POTEL_REACT/static/js/main.26074128.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74e6fbe5.css",
+    "static/js/main.26074128.js"
+  ]
+}
