@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import styles from '../assets/css/home/home.module.css'; // Changed to module.css
+import Header from '../components/Headers/Header';
+import Footer from '../components/Footer/Footer';
+import styles from '../assets/css/home/home.module.css'; 
 import bannerImage from '../assets/images/home/3.png';
 
 
@@ -12,14 +12,13 @@ const Home = () => {
     
    React.createElement('section', { className: styles.heroBanner },
   React.createElement('img', { 
-    src: bannerImage,  // Use the imported image
+    src: bannerImage, 
     alt: 'SLTMobitel Training Program',
     className: styles.bannerImage
   })
 ),
     
     React.createElement('section', { className: styles.jobCategories },
-      // Job Card 1 - Trainee Network Engineers
       React.createElement('div', { className: styles.jobCard },
         React.createElement('h3', { className: styles.jobTitle }, 'Trainee Network Engineers'),
         React.createElement('p', { className: styles.jobDescription }, 'We are hiring new trainee network engineers for SLTMobitel. Only an associate degree, a bachelor\'s degree in computer science, information technology, computer engineering, or a related field undergraduates (3rd year, 4th year), and fresh graduates are preferred.'),
@@ -33,7 +32,6 @@ const Home = () => {
         React.createElement('a', { href: '#/apply', className: styles.applyBtn }, 'Apply Now')
       ),
       
-      // Job Card 2 - Accountant
       React.createElement('div', { className: styles.jobCard },
         React.createElement('h3', { className: styles.jobTitle }, 'Accountant – Financial Accounting'),
         React.createElement('p', { className: styles.jobDescription }, 'Sri Lanka Telecom is in search of high caliber, result oriented and qualified individuals capable of playing a key role in the finance team. You will be engaged in a range of tasks in financial accounting in a highly IT-backed work environment and expected to collaborate with subsidiary companies and cross-functional departments to implement key business drivers and operational controls.'),
@@ -45,7 +43,6 @@ const Home = () => {
         React.createElement('a', { href: '#/apply', className: styles.applyBtn }, 'Apply Now')
       ),
       
-      // Job Card 3 - Engineers
       React.createElement('div', { className: styles.jobCard },
         React.createElement('h3', { className: styles.jobTitle }, 'Engineers'),
         React.createElement('p', { className: styles.jobDescription }, 'As an Engineer of the pioneering ICT solutions provider, you will be a distinguished member of our team, which is mainly responsible for planning, designing, operating and maintaining our state-of-the-art ICT infrastructure.'),
@@ -63,7 +60,6 @@ const Home = () => {
         React.createElement('a', { href: '#/apply', className: styles.applyBtn }, 'Apply Now')
       ),
       
-      // Job Card 4 - Technicians
       React.createElement('div', { className: styles.jobCard },
         React.createElement('h3', { className: styles.jobTitle }, 'Technicians'),
         React.createElement('p', { className: styles.jobDescription }, 'Technicians are mainly responsible to install, maintain and repair electronic communications equipment in telecommunication networks and internet supply systems. Examine telecommunications equipment and systems to find and repair faults.'),

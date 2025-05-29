@@ -1,4 +1,6 @@
 import React from 'react';
+import './Sidebar.css'; // Add this line
+
 
 const Sidebar = ({ activePage }) => {
   return React.createElement('aside', { className: 'sidebar' },

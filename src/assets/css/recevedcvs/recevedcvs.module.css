@@ -1,0 +1,98 @@
+.receivedcvWrapper {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-image: url('../../images/recievedcv/1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.receivedcvContainer {
+  display: flex;
+  flex: 1;
+}
+
+.receivedcvMain {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.receivedcvContent {
+  padding: 30px;
+  padding-top: 20px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* Card styling */
+.receivedcvCard {
+  background: white;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.07);
+  max-width: 100%;
+  margin-left:25%;
+  margin-top: 10%;
+}
+
+.receivedcvCard h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #003d7a;
+  padding-bottom: 15px;
+}
+
+.receivedcvTableContainer {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.tableHead {
+  background-color: #004ea2;
+  color: white;
+}
+
+.tableHead th {
+  background-color: rgba(37, 99, 161, 0.9);
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.tableHead th:first-child {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.tableHead th:last-child {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.table td {
+  padding: 12px;
+  background-color: #f3f3f3;
+  font-size: 14px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.table tr:hover td {
+  background-color: #e0e0e0;
+}

@@ -24,7 +24,6 @@ const Register = () => {
       alert("Passwords don't match!");
       return;
     }
-    // Proceed with registration
   };
 
   return React.createElement('div', { className: styles.registerPage },
@@ -53,7 +52,7 @@ const Register = () => {
               required: true 
             })
           ),
-          // Name Field
+          // Name 
           React.createElement('div', { className: styles.inputGroup },
             React.createElement('label', { htmlFor: 'name' }, 'Name'),
             React.createElement('span', { className: styles.divider }),
@@ -67,7 +66,7 @@ const Register = () => {
               required: true 
             })
           ),
-          // Password Field
+          // Password 
           React.createElement('div', { className: styles.inputGroup },
             React.createElement('label', { htmlFor: 'password' }, 'Password'),
             React.createElement('span', { className: styles.divider }),
@@ -81,7 +80,7 @@ const Register = () => {
               required: true 
             })
           ),
-          // Confirm Password Field
+          // Confirm Password 
           React.createElement('div', { className: styles.inputGroup },
             React.createElement('label', { htmlFor: 'confirmPassword' }, 'Confirm Password'),
             React.createElement('span', { className: styles.divider }),

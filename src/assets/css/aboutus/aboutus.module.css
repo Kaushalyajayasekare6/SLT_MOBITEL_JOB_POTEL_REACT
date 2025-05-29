@@ -1,28 +1,26 @@
-
 .aboutContainer {
   max-width: 1200px;
-  margin: 40px auto;
+  margin: 20px 20px 0 10px;
   padding: 0 20px;
 }
 
-/* Hero Section */
 .aboutHero {
-  text-align: center;
-  margin-bottom: 40px;
+  text-align: left;
+  margin-top: 80px;
+  margin-bottom: 10px;
 }
 
 .aboutHero h1 {
   color: #0056b3;
   font-size: 48px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Content Section */
 .aboutContent {
   display: flex;
-  gap: 40px;
+  gap: 100px;
   align-items: center;
-  margin-bottom: 40px;
+  margin-top: 10px;
 }
 
 .aboutText {
@@ -30,7 +28,7 @@
   background: white;
   padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .aboutText p {
@@ -46,13 +44,12 @@
 .aboutImg {
   width: 100%;
   border-radius: 8px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Learn More Button */
 .learnMoreBtn {
-  text-align: center;
-  margin: 40px 0;
+  text-align: left;
+  margin-left: 200px;
 }
 
 .learnMoreBtn a {
@@ -70,7 +67,7 @@
   background: #003d7a;
 }
 
-/* Responsive Design */
+/* Responsive Styles */
 @media (max-width: 768px) {
   .aboutContent {
     flex-direction: column;

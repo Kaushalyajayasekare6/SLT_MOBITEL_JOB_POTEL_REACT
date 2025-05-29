@@ -1,103 +1,83 @@
-import Header3 from '../components/Header3.js';
-import '../assets/css/acceptcv/acceptcv.css';
+import React from 'react';
+import Header3 from '../components/Headers/Header3';
+import Sidebar from '../components/Sidebar';
+import styles from '../assets/css/AcceptedCVs/AcceptedCVs.module.css';
 
-const AcceptedCVs = () => {
-  const container = document.createElement('div');
-  container.className = 'accepted-cvs-container';
-
-  // Add header
-  container.appendChild(Header3());
-
-  // Create wrapper
-  const wrapper = document.createElement('div');
-  wrapper.className = 'wrapper';
-
-  // Create sidebar
-  const sidebar = document.createElement('aside');
-  sidebar.className = 'sidebar';
-
-  const sidebarNav = document.createElement('nav');
-  const sidebarList = document.createElement('ul');
-
-  const menuItems = [
-    { text: 'Job Creation', link: '../HTML_FILES/jobcreation.html' },
-    { text: 'Modification', link: '../HTML_FILES/jobmodification.html' },
-    { text: 'Received CVs', link: '../HTML_FILES/recivedcv.html' },
-    { text: 'Accepted CVs', link: '../HTML_FILES/acceptcv.html', active: true }
+function AcceptedCVs() {
+  const acceptedCVsData = [
+    {
+      jobTitle: "Software Engineer",
+      name: "Kaushalya Jayasekara",
+      gender: "Female",
+      field: "IT",
+      contact: "00000000",
+      cvLink: "#"
+    },
+    {
+      jobTitle: "Network Technician",
+      name: "Nimal Perera",
+      gender: "Male",
+      field: "Networking",
+      contact: "0712345678",
+      cvLink: "#"
+    }
   ];
 
-  menuItems.forEach(item => {
-    const li = document.createElement('li');
-    if (item.active) li.className = 'active';
-    
-    const arrow = document.createElement('span');
-    arrow.className = 'arrow';
-    arrow.textContent = '▶';
-    
-    const a = document.createElement('a');
-    a.href = item.link;
-    a.textContent = item.text;
-    
-    li.appendChild(arrow);
-    li.appendChild(a);
-    sidebarList.appendChild(li);
-  });
-
-  sidebarNav.appendChild(sidebarList);
-  sidebar.appendChild(sidebarNav);
-  wrapper.appendChild(sidebar);
-
-  // Create main content
-  const main = document.createElement('main');
-  const content = document.createElement('section');
-  content.className = 'content';
-
-  const card = document.createElement('div');
-  card.className = 'card';
-
-  const heading = document.createElement('h2');
-  heading.textContent = 'Accepted CVs';
-  card.appendChild(heading);
-
-  const tableContainer = document.createElement('div');
-  tableContainer.className = 'table-container';
-
-  const table = document.createElement('table');
-  const thead = document.createElement('thead');
-  const tbody = document.createElement('tbody');
-
-  // Create table header
-  const headerRow = document.createElement('tr');
-  const headers = ['Job Title', 'Name', 'Gender', 'Field', 'Contact Number', 'CV'];
-  
-  headers.forEach(headerText => {
-    const th = document.createElement('th');
-    th.textContent = headerText;
-    headerRow.appendChild(th);
-  });
-  
-  thead.appendChild(headerRow);
-  table.appendChild(thead);
-
-  // Create empty table rows (2 rows as in the example)
-  for (let i = 0; i < 2; i++) {
-    const row = document.createElement('tr');
-    for (let j = 0; j < 6; j++) {
-      const td = document.createElement('td');
-      row.appendChild(td);
-    }
-    tbody.appendChild(row);
-  }
-  
-  table.appendChild(tbody);
-  tableContainer.appendChild(table);
-  card.appendChild(tableContainer);
-  content.appendChild(card);
-  main.appendChild(content);
-  wrapper.appendChild(main);
-  container.appendChild(wrapper);
-
-  return container;
-};
+  return (
+    <div className={styles.acceptedcvWrapper}>
+      <Header3 />
+      <div className={styles.acceptedcvContainer}>
+        <Sidebar />
+        <main className={styles.acceptedcvMain}>
+          <section className={styles.acceptedcvContent}>
+            <div className={styles.acceptedcvCard}>
+              <h2>Accepted CVs</h2>
+              <div className={styles.acceptedcvTableContainer}>
+                <table className={styles.table}>
+                  <thead className={styles.tableHead}>
+                    <tr>
+                      <th>Job Title</th>
+                      <th>Name</th>
+                      <th>Gender</th>
+                      <th>Field</th>
+                      <th>Contact Number</th>
+                      <th>CV</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {acceptedCVsData.map((cv, index) => (
+                      <tr key={index}>
+                        <td>{cv.jobTitle}</td>
+                        <td>{cv.name}</td>
+                        <td>{cv.gender}</td>
+                        <td>{cv.field}</td>
+                        <td>{cv.contact}</td>
+                        <td>
+                          <a 
+                            href={cv.cvLink} 
+                            className={styles.viewBtn}
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                          >
+                            View
+                          </a>
+                        </td>
+                      </tr>
+                    ))}
+                    {acceptedCVsData.length === 0 && (
+                      <tr>
+                        <td colSpan="6">No accepted CVs available.</td>
+                      </tr>
+                    )}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  );
+}
 
 export default AcceptedCVs;

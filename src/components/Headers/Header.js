@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Header.module.css';
-import logoImage from '../assets/images/home/1.png'; 
+import logoImage from '../../assets/images/home/1.png'; 
 
 const Header = ({ activePage }) => {
   return React.createElement('header', { className: styles.header },

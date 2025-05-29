@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../components/Header2';
-import '../assets/css/status/status.css';
+import Header from '../components/Headers/Header2';
+import styles from '../assets/css/status/status.module.css';
 
 const Status = () => {
   const [appliedJobs] = React.useState([
@@ -21,9 +21,9 @@ const Status = () => {
   return (
     <div>
       <Header activePage="status" />
-      <main className="status-container">
-        <h1>Applied Job Status</h1>
-        <table className="status-table">
+      <main className={styles.statusContainer}>
+        <h1 className={styles.heading}>Applied Job Status</h1>
+        <table className={styles.statusTable}>
           <thead>
             <tr>
               <th>Job Field</th>
@@ -38,7 +38,7 @@ const Status = () => {
                 <td>{job.field}</td>
                 <td>{job.position}</td>
                 <td>{job.recommendation}</td>
-                <td className={`status-${job.status}`}>
+                <td className={styles[`status-${job.status}`]}>
                   {job.status.charAt(0).toUpperCase() + job.status.slice(1)}
                 </td>
               </tr>

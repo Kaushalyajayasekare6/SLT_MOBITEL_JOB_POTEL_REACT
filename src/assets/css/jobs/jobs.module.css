@@ -1,0 +1,171 @@
+body {
+  background-image: url("../../images/jobs/2.png");
+}
+
+.jobCategories {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-top: 20px;
+  margin-left: 40px;
+  
+}
+
+
+.titleContainer {
+  width: 100%;
+  margin-top: 85px;
+  text-align: left;
+  padding-left: 30px;
+}
+.jobsTitle {
+  text-align: left;
+  font-size: 36px;
+  color: #0056b3;
+  margin: 0 0 20px 20px;
+  font-weight: bold;
+  width: 100%;
+  max-width: 900px;
+}
+
+.jobCard {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 300px;
+  max-width: 300px;
+  flex: 0 0 auto;
+}
+
+
+.jobCard:hover {
+  transform: translateY(-5px);
+}
+
+.jobCard h3 {
+  padding: 15px;
+  background: #0056b3;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jobCard p {
+  font-weight: bold;
+  font-size: 10px;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+.jobCard ul {
+  padding: 10px 10px;
+  list-style-type: none;
+  flex-grow: 1;
+}
+
+.jobCard b {
+  font-size: 10px;
+}
+
+.jobCard li {
+  margin-bottom: 8px;
+  font-size: 10px;
+  padding-left: 20px;
+  position: relative;
+  margin-top: 2px;
+}
+
+.jobCard li:before {
+  content: "•";
+  color: #0056b3;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.applyBtn {
+  display: block;
+  background: rgb(105, 185, 105);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: auto;
+  transition: background 0.3s;
+}
+
+.applyBtn:hover {
+  background: #003d7a;
+}
+
+/* ✅ MEDIA QUERIES - responsive */
+@media (max-width: 768px) {
+  .jobCategories {
+    padding: 20px;
+  }
+
+  .jobsTitle {
+    margin-left: 20px;
+    font-size: 28px;
+  }
+
+  .jobCard {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .jobStatusBtn {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .jobCard h3 {
+    font-size: 1.2rem;
+    min-height: 80px;
+  }
+
+  .jobCard p {
+    font-size: 0.85rem;
+  }
+
+  .jobCard li {
+    font-size: 0.8rem;
+  }
+}
+
+.statusButtonContainer {
+  text-align: center;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.statusBtn {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.statusBtn:hover {
+  background-color: #218838;
+}

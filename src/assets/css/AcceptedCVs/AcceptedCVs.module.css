@@ -1,0 +1,96 @@
+.acceptedcvWrapper {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-image: url("../../images/acceptedcv/1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.acceptedcvContainer {
+  display: flex;
+  flex: 1;
+}
+
+.acceptedcvMain {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.acceptedcvContent {
+  padding: 30px;
+  padding-top: 100px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.acceptedcvCard {
+  background: white;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.07);
+  max-width: 90%;
+  margin: 0 auto;
+  margin-left: 25%;
+}
+
+.acceptedcvCard h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #003d7a;
+}
+
+.acceptedcvTableContainer {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.tableHead {
+  background-color: #004ea2;
+  color: white;
+}
+
+.tableHead th {
+  background-color: rgba(37, 99, 161, 0.9);
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.tableHead th:first-child {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.tableHead th:last-child {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.table td {
+  padding: 12px;
+  background-color: #f3f3f3;
+  font-size: 14px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.table tr:hover td {
+  background-color: #e0e0e0;
+}

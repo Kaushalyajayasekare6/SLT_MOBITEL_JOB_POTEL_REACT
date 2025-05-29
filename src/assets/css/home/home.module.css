@@ -1,10 +1,3 @@
-/* Global Reset */
-.homePage * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Arial, sans-serif;
-}
 
 .homePage {
   background-color: #0E1338;
@@ -12,7 +5,6 @@
   line-height: 1.6;
 }
 
-/* Hero Banner */
 .heroBanner {
   position: relative;
   margin-bottom: 40px;
@@ -29,7 +21,6 @@
   margin: auto;
 }
 
-/* Job Categories */
 .jobCategories {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -40,8 +31,6 @@
   border-top-right-radius: 50px;
   margin-top: 40px;
 }
-
-/* Job Card */
 .jobCard {
   background: white;
   border-radius: 20px;
@@ -107,7 +96,6 @@
   left: 0;
 }
 
-/* Apply Button */
 .applyBtn {
   display: block;
   background: rgb(105, 185, 105);
@@ -126,7 +114,6 @@
   background: #003d7a;
 }
 
-/* Footer */
 .footer {
   background: #d4cfcf;
   color: black;
